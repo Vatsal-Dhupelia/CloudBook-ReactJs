@@ -1,8 +1,6 @@
-import React from 'react'
-import { useContext, useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 
-const About = () => {
-    
+const About = () => { 
     return (
         <div>
             This is About page
@@ -10,4 +8,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default About
