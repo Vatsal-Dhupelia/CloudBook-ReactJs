@@ -20,8 +20,8 @@ const Login = (props) => {
         if(json.success){
             //Save the auth token  and redirect
             localStorage.setItem('token', json.authtoken);
-            history.push("/");
             props.showAlert("Logged In Successfully", "success")
+            history.push("/");
         }
         else{
             props.showAlert("Invalid Credentials", "danger")
@@ -33,7 +33,8 @@ const Login = (props) => {
     }
 
     return (
-        <div className='container my-5'>
+        <div className='container mt-5'>
+            <h2 className='mb-4 text-center'>Login to your CloudBook Account</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email address</label>

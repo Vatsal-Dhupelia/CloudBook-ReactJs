@@ -32,7 +32,8 @@ const Signup = (props) => {
         setCredentials({ ...credentials, [e.target.name]: e.target.value })
     }
     return (
-        <div className='container my-5'>
+        <div className='container mt-5'>
+            <h2 className='mb-4 text-center'>Create your CloudBook Account</h2>
             <form onSubmit={handleSubmit}>
                 <div className="container mb-3">
                     <label htmlFor="name" className="form-label">Name</label>
@@ -50,7 +51,9 @@ const Signup = (props) => {
                     <label htmlFor="cpassword" className="form-label">Confirm Password</label>
                     <input type="password" className="form-control" id="cpassword" name='cpassword' onChange={onChange} minLength={5} required />
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <div className="container mb-3">
+                    <button type="submit" className="btn btn-primary">Submit</button>
+                </div>
             </form>
         </div>
     )
